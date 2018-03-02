@@ -19,28 +19,33 @@ label.pill {
     margin-right: 5px;
     font-family: $monospace-font;
 	will-change: background-color;
-}
-
-label.pill:hover,
-label.pill-about:hover {
-	top: -1px;
+	&:hover {
+		top: -2px;
+	}
+	&:active {
+		top: 0px;
+	}
 }
 
 label.pill-about {
 	font-style: italic;
-	background-color: #a6a6a6;
-	will-change: background-color;
 }
 
-label.pill:hover {
-	background-color: #3aa0ff;
-}
+// Pills change color when hovering or checked
+label.pill.pink:hover { background-color: lighten($pill-pink, 20%); }
+label.pill.orange:hover { background-color: lighten($pill-orange, 20%); }
+label.pill.yellow:hover { background-color: lighten($pill-yellow, 20%); }
+label.pill.green:hover { background-color: lighten($pill-green, 20%); }
+label.pill.light-blue:hover { background-color: lighten($pill-light-blue, 20%); }
+label.pill.dark-blue:hover { background-color: lighten($pill-dark-blue, 20%); }
+label.pill.purple:hover { background-color: lighten($pill-purple, 20%); }
+label.pill.grey:hover { background-color: lighten($pill-grey, 20%); }
 
-label.pill-about:hover {
-	background-color: rgb(255, 0, 212);
-}
-
-.checkbox:checked + label {
-	font-weight: bold;
-	background-color: #f00;
-}
+.checkbox:checked + label.pill.pink { background-color: $pill-pink; font-weight: bold; color: white; }
+.checkbox:checked + label.pill.orange { background-color: $pill-orange; font-weight: bold; color: white; }
+.checkbox:checked + label.pill.yellow { background-color: $pill-yellow; font-weight: bold; color: white; }
+.checkbox:checked + label.pill.green { background-color: $pill-green; font-weight: bold; color: white; }
+.checkbox:checked + label.pill.light-blue { background-color: $pill-light-blue; font-weight: bold; color: white; }
+.checkbox:checked + label.pill.dark-blue { background-color: $pill-dark-blue; font-weight: bold; color: white; }
+.checkbox:checked + label.pill.purple { background-color: $pill-purple; font-weight: bold; color: white; }
+.checkbox:checked + label.pill.grey { background-color: $pill-grey; font-weight: bold; color: white; }
