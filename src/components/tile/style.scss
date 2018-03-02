@@ -1,0 +1,22 @@
+@import "../../style/variables";
+
+$h-min: 150;
+$h-max: 250;
+$s-min: 10;
+$s-max: 20;
+$l-min: 40;
+$l-max: 60;
+
+.tile {
+    height: $tile-height;
+}
+
+@for $i from 1 through 100 {
+  .tile:nth-child(#{$i}) {
+    background-color: hsl(
+        $h-min+random($h-max+-$h-min),
+        $s-min+random($s-max+-$s-min),
+        $l-min+random($l-max+-$l-min)
+    );
+  }
+}

@@ -1,0 +1,30 @@
+@import 'variables';
+
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: $bg-color;
+	font-family: 'Helvetica Neue', arial, sans-serif;
+	font-weight: 400;
+	color: $text-color;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#app {
+	height: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#main {
+	padding-left: $sidebar-width;
+	min-height: 100%;
+	width: 100%;
+}

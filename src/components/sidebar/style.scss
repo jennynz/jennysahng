@@ -1,0 +1,45 @@
+@import "../../style/variables";
+
+.sidebar-container {
+	position: relative;
+}
+
+.sidebar {
+	position: fixed;
+	height: 100%;
+	padding: 60px 0 0 60px;
+	z-index: 50;
+	padding: 60px 60px 60px 60px;
+	float: right;
+	color: $text-color;
+	width: $sidebar-width;
+}
+
+.sidebar h1 {
+	font-size: 3.5rem;
+}
+
+.sidebar nav {
+	font-size: 100%;
+}
+
+.sidebar nav a {
+	display: inline-block;
+	height: 56px;
+	line-height: 56px;
+	padding: 0 15px;
+	min-width: 50px;
+	text-align: center;
+	background: rgba(255,255,255,0);
+	text-decoration: none;
+	will-change: background-color;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a:active {
+	background: rgba(0,0,0,0.2);
+}
+
+.sidebar nav a.active {
+	background: rgba(0,0,0,0.4);
+}

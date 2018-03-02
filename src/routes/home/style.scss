@@ -1,0 +1,11 @@
+@import "../../style/variables";
+
+.home {
+	padding: 80px 60px;
+}
+
+.tile-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax($tile-width, 1fr));
+	grid-gap: $tile-gap;
+}
