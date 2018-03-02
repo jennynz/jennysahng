@@ -6,6 +6,9 @@ export default class Tile extends Component {
 		return (
 			<div class={style.tile}>
                 <p>Title of thing</p>
+				<span class={style['tag-dot']}>&nbsp;&nbsp;&nbsp;&nbsp;tag name</span>
+				<span class={style['tag-dot']}>&nbsp;&nbsp;&nbsp;&nbsp;another tag</span>
+				<span class={style['tag-dot']}>&nbsp;&nbsp;&nbsp;&nbsp;tag</span>
 			</div>
 		);
 	}

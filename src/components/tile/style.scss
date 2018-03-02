@@ -8,15 +8,46 @@ $l-min: 40;
 $l-max: 60;
 
 .tile {
-    height: $tile-height;
+	height: $tile-height;
+	color: $bg-color;
+	padding: 20px;
+	position: relative;
+}
+
+.tile p {
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+$dot-radius: 6px;
+
+.tag-dot {
+	float: left;
+	margin: $dot-radius / 2;
+	font-size: 0.8rem;
+	background:rgb(53, 53, 53);
+	border-radius: $dot-radius;
+	width: $dot-radius * 2;
+	height: $dot-radius * 2;
+	transition:             width 200ms, height 200ms, border-radius 200ms, left 200ms, top 200ms;
+			-moz-transition:    width 200ms, height 200ms, border-radius 200ms, left 200ms, top 200ms;
+			-ms-transition:     width 200ms, height 200ms, border-radius 200ms, left 200ms, top 200ms;
+			-o-transition:      width 200ms, height 200ms, border-radius 200ms, left 200ms, top 200ms;
+			-webkit-transition: width 200ms, height 200ms, border-radius 200ms, left 200ms, top 200ms;
+	overflow: hidden;
+	will-change: width;
+}
+
+.tag-dot:hover {
+	width: 150px;
 }
 
 @for $i from 1 through 100 {
-  .tile:nth-child(#{$i}) {
-    background-color: hsl(
-        $h-min+random($h-max+-$h-min),
-        $s-min+random($s-max+-$s-min),
-        $l-min+random($l-max+-$l-min)
-    );
-  }
+	.tile:nth-child(#{$i}) {
+		background-color: hsl(
+			$h-min + random($h-max + -$h-min),
+			$s-min + random($s-max + -$s-min),
+			$l-min + random($l-max + -$l-min)
+		);
+	}
 }
