@@ -2,10 +2,8 @@ import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 
 import Sidebar from './sidebar';
-import Home from '../routes/home';
-import About from '../routes/about';
-// import Home from 'async!../routes/home';
-// import About from 'async!../routes/about';
+import Home from 'async!../routes/home';
+import About from 'async!../routes/about';
 
 if (module.hot) {
 	require('preact/debug');
