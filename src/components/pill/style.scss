@@ -1,0 +1,47 @@
+@import "../../style/variables";
+
+.checkbox {
+    display: none;
+}
+
+label.pill {
+    position: relative;
+    display: inline-block;
+    height: 32px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.6);
+    line-height: 32px;
+    padding: 0 12px;
+    border-radius: 16px;
+    background-color: #e4e4e4;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    font-family: "Andale Mono", AndaleMono, "Consolas", "Lucida Console",
+	"Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+	will-change: background-color;
+}
+
+label.pill:hover,
+label.pill-about:hover {
+	top: -1px;
+}
+
+label.pill-about {
+	font-style: italic;
+	background-color: #a6a6a6;
+	will-change: background-color;
+}
+
+label.pill:hover {
+	background-color: #3aa0ff;
+}
+
+label.pill-about:hover {
+	background-color: rgb(255, 0, 212);
+}
+
+.checkbox:checked + label {
+	font-weight: bold;
+	background-color: #f00;
+}

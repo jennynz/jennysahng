@@ -1,4 +1,6 @@
 @import "../../style/variables";
+@import url('https://fonts.googleapis.com/css?family=Gabriela');
+// @import url('https://fonts.googleapis.com/css?family=Quando');
 
 .sidebar-container {
 	position: relative;
@@ -13,10 +15,18 @@
 	float: right;
 	color: $text-color;
 	width: $sidebar-width;
+	line-height: 1.5;
+	text-align: center;
+}
+
+header {
+	// font-family: 'Quando', serif;
+	font-family: 'Gabriela', serif;
 }
 
 .sidebar h1 {
-	font-size: 3.5rem;
+	padding-top: 40px;
+	font-size: 1.6em;
 }
 
 .sidebar nav {
@@ -30,16 +40,29 @@
 	padding: 0 15px;
 	min-width: 50px;
 	text-align: center;
-	background: rgba(255,255,255,0);
 	text-decoration: none;
-	will-change: background-color;
+	color: $text-color;
+	will-change: color;
 }
 
 .sidebar nav a:hover,
 .sidebar nav a:active {
-	background: rgba(0,0,0,0.2);
+	color: $highlight-color;
 }
 
-.sidebar nav a.active {
-	background: rgba(0,0,0,0.4);
+.profile_pic {
+	width: 100%;
+	transform: scale(1.5);
+}
+
+.social-icon {
+	width: 50px;
+	padding: 10px;
+	transition: 200ms;
+	transition-timing-function: ease-in-out;
+	-webkit-transition: 200ms;
+	-webkit-transition-timing-function: ease-in-out;
+	&:hover {
+		fill: red;
+	}
 }
