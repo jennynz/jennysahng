@@ -17,6 +17,7 @@ export default class Sidebar extends Component {
 						src={profile_pic}
 						class={style.profile_pic}
 						alt="Hi, my name's Jenny, and I like making things."
+						onClick={props.handleNavigation}
 					/>
 					<header>
 						<h1>Hi, I'm Jenny.</h1>
@@ -34,6 +35,7 @@ export default class Sidebar extends Component {
 					</nav>
 					<Filters />
 				</div>
+				<Filters onClick={props.handleFilter} />
 				<SocialLinks />
 			</div>
 		);

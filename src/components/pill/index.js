@@ -2,19 +2,21 @@ import { h } from 'preact';
 import style from './style';
 
 const Pill = props => {
-	const id = ['pill', props.text].join('-');
-	const classNames = [style.pill, style[props.className]].join(' ');
+	const { text, className, color, handleClick } = props;
+	const id = ['pill', text].join('-');
+	const classNames = [style.pill, style[className], style[color]].join(' ');
+
 	return (
 		<span>
 			<input
 				id={id}
 				class={style.checkbox}
 				type="checkbox"
-				name={props.text}
+				name={text}
 				value="coding"
 			/>
-			<label for={id} class={classNames}>
-				{props.text}
+			<label for={id} class={classNames} onClick={() => handleClick}>
+				{text}
 			</label>
 		</span>
 	);
