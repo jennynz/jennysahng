@@ -54,15 +54,3 @@ header {
 	width: 100%;
 	transform: scale(1.5);
 }
-
-.social-icon {
-	width: 50px;
-	padding: 10px;
-	transition: 200ms;
-	transition-timing-function: ease-in-out;
-	-webkit-transition: 200ms;
-	-webkit-transition-timing-function: ease-in-out;
-	&:hover {
-		fill: red;
-	}
-}

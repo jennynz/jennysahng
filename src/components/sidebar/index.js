@@ -3,12 +3,10 @@ import { h, Component } from 'preact';
 
 import Filters from '../filters';
 import Pill from '../pill';
+import SocialLinks from '../socialLinks';
 import style from './style';
 
 import profile_pic from '../../assets/profile_drawing.png';
-import github from '../../assets/github.svg';
-import linkedin from '../../assets/linkedin.svg';
-import twitter from '../../assets/twitter.svg';
 
 export default class Sidebar extends Component {
 	render() {
@@ -35,40 +33,8 @@ export default class Sidebar extends Component {
 						<Pill text="i" className="pill-about" />
 					</nav>
 					<Filters />
-					<a
-						href="https://www.linkedin.com/in/jennysahng/"
-						alt="Jenny Sahng's LinkedIn profile"
-						target="_blank"
-					>
-						<img
-							src={linkedin}
-							class={style["social-icon"]}
-							alt="Jenny Sahng's LinkedIn profil"
-						/>
-					</a>
-					<a
-						href="https://github.com/jennynz/"
-						alt="Jenny Sahng's Github"
-						target="_blank"
-					>
-						<img
-							src={github}
-							class={style["social-icon"]}
-							alt="Jenny Sahng's Github"
-						/>
-					</a>
-					<a
-						href="https://twitter.com/JennySahng"
-						alt="Twitter @JennySahng"
-						target="_blank"
-					>
-						<img
-							src={twitter}
-							class={style["social-icon"]}
-							alt="Twitter @JennySahng"
-						/>
-					</a>
 				</div>
+				<SocialLinks />
 			</div>
 		);
 	}
