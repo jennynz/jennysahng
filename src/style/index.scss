@@ -6,7 +6,7 @@ html, body {
 	padding: 0;
 	margin: 0;
 	background: $bg-color;
-	font-family: 'Helvetica Neue', arial, sans-serif;
+	font-family: $body-font;
 	font-weight: 400;
 	color: $text-color;
 	-webkit-font-smoothing: antialiased;

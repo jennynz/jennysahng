@@ -1,6 +1,4 @@
 @import "../../style/variables";
-@import url('https://fonts.googleapis.com/css?family=Gabriela');
-// @import url('https://fonts.googleapis.com/css?family=Quando');
 
 .sidebar-container {
 	position: relative;
@@ -20,12 +18,11 @@
 }
 
 header {
-	// font-family: 'Quando', serif;
-	font-family: 'Gabriela', serif;
+	font-family: $header-font;
+	padding: 40px 0 25px 0;
 }
 
 .sidebar h1 {
-	padding-top: 40px;
 	font-size: 1.6em;
 }
 
@@ -47,10 +44,10 @@ header {
 
 .sidebar nav a:hover,
 .sidebar nav a:active {
-	color: $highlight-color;
+	color: red;
 }
 
-.profile_pic {
+.profile-pic {
 	width: 100%;
 	transform: scale(1.5);
 }

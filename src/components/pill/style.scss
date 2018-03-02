@@ -14,11 +14,10 @@ label.pill {
     line-height: 32px;
     padding: 0 12px;
     border-radius: 16px;
-    background-color: #e4e4e4;
+    background-color: $pill-default;
     margin-bottom: 5px;
     margin-right: 5px;
-    font-family: "Andale Mono", AndaleMono, "Consolas", "Lucida Console",
-	"Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-family: $monospace-font;
 	will-change: background-color;
 }
 

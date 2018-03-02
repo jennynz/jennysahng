@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Gabriela');
+// @import url('https://fonts.googleapis.com/css?family=Quando');
+
 // Colors
 $text-color: #444;
-$highlight-color: #ff0097;
 $bg-color: rgb(241, 241, 241);
 
 // Layout
@@ -9,3 +11,11 @@ $sidebar-width: 300px;
 $tile-width: 300px;
 $tile-height: 250px;
 $tile-gap: 80px;
+
+// Fonts
+$header-font: 'Gabriela', serif;
+// $header-font: 'Quando', serif;
+$monospace-font: "Andale Mono", AndaleMono, "Consolas", "Lucida Console",
+"Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
+// $body-font: 'Helvetica Neue', arial, sans-serif;
+$body-font: $monospace-font;
