@@ -19,35 +19,16 @@
 
 header {
 	font-family: $header-font;
-	padding: 40px 0 25px 0;
 }
 
 .sidebar h1 {
 	font-size: 1.6em;
 }
 
-.sidebar nav {
-	font-size: 100%;
-}
-
-.sidebar nav a {
-	display: inline-block;
-	height: 56px;
-	line-height: 56px;
-	padding: 0 15px;
-	min-width: 50px;
-	text-align: center;
-	text-decoration: none;
-	color: $text-color;
-	will-change: color;
-}
-
-.sidebar nav a:hover,
-.sidebar nav a:active {
-	color: red;
+nav {
+	padding: 15px 0 20px 0;
 }
 
 .profile-pic {
 	width: 100%;
-	transform: scale(1.5);
 }

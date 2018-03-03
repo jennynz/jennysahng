@@ -17,7 +17,7 @@ const Sidebar = props => {
 				/>
 				<header>
 					<h1>Hi, I'm Jenny.</h1>
-					<h3>I like front-end development, data, doodling &amp; dogs.</h3>
+					<h3>Fledgling data scientist, occasional doodler, hobbyist developer<br />&amp; dog lover.</h3>
 				</header>
 				<nav>
 					{/* <Link activeClassName={style.active} href="/">
@@ -33,8 +33,8 @@ const Sidebar = props => {
 						color="dark-blue"
 						onClick={props.handleNavigation}
 					/>
+					<Filters onClick={props.handleFilter} />
 				</nav>
-				<Filters onClick={props.handleFilter} />
 				<SocialLinks />
 			</div>
 		</div>

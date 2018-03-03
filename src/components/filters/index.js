@@ -5,9 +5,9 @@ import style from './style';
 const tags = [
 	{ name: 'data', color: 'purple' },
 	{ name: 'web dev', color: 'green' },
-	{ name: 'drawing', color: 'pink' },
+	{ name: 'drawing & design', color: 'pink' },
 	{ name: 'writing', color: 'yellow' },
-	{ name: 'video', color: 'light-blue' },
+	{ name: 'videography', color: 'light-blue' },
 	{ name: 'linguistics', color: 'orange' },
 	{ name: 'misc', color: 'grey' }
 ];

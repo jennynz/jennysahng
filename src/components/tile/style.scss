@@ -12,6 +12,15 @@ $l-max: 60;
 	color: $bg-color;
 	padding: 20px;
 	position: relative;
+	transition:					transform 200ms;
+	-moz-transition:    transform 200ms;
+	-ms-transition:     transform 200ms;
+	-o-transition:      transform 200ms;
+	-webkit-transition: transform 200ms;
+	will-change: transform;
+	&:hover {
+		transform: scale(1.05);
+	}
 }
 
 .tile p {
@@ -25,7 +34,7 @@ $dot-radius: 6px;
 	float: left;
 	margin: $dot-radius / 2;
 	font-size: 0.8rem;
-	background:rgb(53, 53, 53);
+	background:#4e4e4e;
 	border-radius: $dot-radius;
 	width: $dot-radius * 2;
 	height: $dot-radius * 2;
