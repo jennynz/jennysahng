@@ -17,7 +17,7 @@ const Sidebar = props => {
 				/>
 				<header>
 					<h1>Hi, I'm Jenny.</h1>
-					<h3>Fledgling data scientist, occasional doodler, hobbyist developer<br />&amp; dog lover.</h3>
+					<h3>Fledgling data scientist, occasional doodler, hobbyist developer &amp; <span class="no-wrap">dog lover.</span></h3>
 				</header>
 				<nav>
 					<Link activeClassName={style.active} href="/">

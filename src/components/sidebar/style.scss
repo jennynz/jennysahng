@@ -5,16 +5,21 @@
 }
 
 .sidebar {
-	position: fixed;
+	padding: 20px;
 	height: 100%;
-	padding: 60px 0 0 60px;
 	z-index: 50;
-	padding: 60px 60px 60px 60px;
-	float: right;
 	color: $text-color;
-	width: $sidebar-width;
 	line-height: 1.5;
 	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.sidebar {
+		position: fixed;
+		padding: 60px;
+		width: $sidebar-width;
+		float: right;
+	}
 }
 
 header {
@@ -22,7 +27,11 @@ header {
 }
 
 .sidebar h1 {
-	font-size: 1.6em;
+	-webkit-margin-after: 0.2em
+}
+
+.sidebar h3 {
+	-webkit-margin-before: 0.2em;
 }
 
 nav {
@@ -31,4 +40,5 @@ nav {
 
 .profile-pic {
 	width: 100%;
+	max-width: 300px;
 }

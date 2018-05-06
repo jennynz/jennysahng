@@ -23,8 +23,14 @@ html, body {
 	margin: 0 auto;
 }
 
-#main {
-	padding-left: $sidebar-width;
-	min-height: 100%;
-	width: 100%;
+@media (min-width: 768px) {
+	#main {
+		padding-left: $sidebar-width;
+		min-height: 100%;
+		width: 100%;
+	}
+}
+
+.no-wrap {
+	white-space: nowrap;
 }
