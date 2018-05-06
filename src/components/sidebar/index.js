@@ -1,5 +1,5 @@
 import { h } from 'preact';
-// import { Link } from 'preact-router/match';
+import { Link } from 'preact-router/match';
 import Filters from '../filters';
 import Pill from '../pill';
 import SocialLinks from '../socialLinks';
@@ -20,19 +20,16 @@ const Sidebar = props => {
 					<h3>Fledgling data scientist, occasional doodler, hobbyist developer<br />&amp; dog lover.</h3>
 				</header>
 				<nav>
-					{/* <Link activeClassName={style.active} href="/">
-						Home
+					<Link activeClassName={style.active} href="/">
+						<Pill text="home" />
 					</Link>
 					<Link activeClassName={style.active} href="/about">
-						About
-					</Link> */}
-					<Pill text="Home" />
-					<Pill
-						text="i"
-						className="pill-about"
-						color="dark-blue"
-						onClick={props.handleNavigation}
-					/>
+						<Pill
+							text="i"
+							className="pill-about"
+							onClick={props.handleNavigation}
+						/>
+					</Link>
 					<Filters onClick={props.handleFilter} />
 				</nav>
 				<SocialLinks />
