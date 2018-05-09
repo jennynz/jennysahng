@@ -1,5 +1,7 @@
 # jennysahng.com portfolio
 
+Personal portfolio website. Work in progress, aiming to go live the week of 12 March 2018!
+
 ## CLI Commands
 
 ``` bash
