@@ -26,11 +26,11 @@ $l-max: 70;
 	position: relative;
 	background-position: center;
     background-size: cover;
-	transition:			transform 200ms;
-	-moz-transition:    transform 200ms;
-	-ms-transition:     transform 200ms;
-	-o-transition:      transform 200ms;
-	-webkit-transition: transform 200ms;
+	transition:			transform 500ms ease-in-out;
+	-moz-transition:    transform 500ms ease-in-out;
+	-ms-transition:     transform 500ms ease-in-out;
+	-o-transition:      transform 500ms ease-in-out;
+	-webkit-transition: transform 500ms ease-in-out;
 	will-change: transform;
 	&:hover {
 		transform: scale(1.05);
@@ -45,6 +45,15 @@ $l-max: 70;
 	padding-bottom: 10px;
 }
 
+.tag-dots {
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 20px;
+	padding-right: 20px;
+	cursor: default;
+}
+
 $dot-radius: 9px;
 
 .tag-dot {
@@ -54,6 +63,7 @@ $dot-radius: 9px;
 	color: white;
 	border-radius: $dot-radius;
 	width: $dot-radius * 2;
+	max-width: $dot-radius * 2;
 	height: $dot-radius * 2;
 
 	text-transform: uppercase;
@@ -62,13 +72,13 @@ $dot-radius: 9px;
 	font-size: 13px;
 	padding-top: 2px;
 
-	transition:				width 200ms, height 200ms, border-radius 200ms, left 200ms, top 200ms;
-		-moz-transition:    width 200ms, height 200ms, border-radius 200ms, left 200ms, top 200ms;
-		-ms-transition:     width 200ms, height 200ms, border-radius 200ms, left 200ms, top 200ms;
-		-o-transition:      width 200ms, height 200ms, border-radius 200ms, left 200ms, top 200ms;
-		-webkit-transition: width 200ms, height 200ms, border-radius 200ms, left 200ms, top 200ms;
 	overflow: hidden;
 	will-change: width;
+	transition:				max-width 500ms ease-in-out;
+		-moz-transition:    max-width 500ms ease-in-out;
+		-ms-transition:     max-width 500ms ease-in-out;
+		-o-transition:      max-width 500ms ease-in-out;
+		-webkit-transition: max-width 500ms ease-in-out;
 
 	.tag-dot-buffer {
 		width: $dot-radius * 2;
@@ -77,8 +87,14 @@ $dot-radius: 9px;
 }
 
 .tag-dot:hover {
-	width: max-content;
+	width: fit-content;
+	max-width: 200px;
 	padding: 2px $dot-radius + 2px;
+	transition:				max-width 500ms ease-in-out;
+		-moz-transition:    max-width 500ms ease-in-out;
+		-ms-transition:     max-width 500ms ease-in-out;
+		-o-transition:      max-width 500ms ease-in-out;
+		-webkit-transition: max-width 500ms ease-in-out;
 	.tag-dot-buffer {
 		width: 0;
 	}

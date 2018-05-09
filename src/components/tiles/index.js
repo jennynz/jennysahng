@@ -11,13 +11,16 @@ const Tiles = props => (
 				return (
 					<div class={style.tile} key={i} style={projectImg}>
 						<p>{project.title}</p>
-						{
-							project.tags.map((tag, j) => (
-								<span class={[style['tag-dot'], style[tagColors[tag]]].join(' ')} key={j}>
-									<span class={style['tag-dot-buffer']}>&nbsp;</span>{tag}
-								</span>
-							))
-						}
+						<div class={style['tag-dots']}>
+							{
+								project.tags.map((tag, j) => (
+									<span class={[style['tag-dot'], style[tagColors[tag]]].join(' ')} key={j}>
+										<span class={style['tag-dot-buffer']}>&nbsp;</span>{tag}
+									</span>
+								))
+							}
+						</div>
+
 					</div>
 				);
 			})

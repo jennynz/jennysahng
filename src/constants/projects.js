@@ -13,15 +13,27 @@ const projects = [{
 },{
 	title: 'Montreal girls',
 	img: '../../assets/profile_drawing.png',
+	tags: ['videography']
+},{
+	title: 'Linguistics x Tolerance',
+	img: '../../assets/profile_drawing.png',
+	tags: ['writing', 'linguistics']
+},{
+	title: 'Montreal girls',
+	img: '../../assets/profile_drawing.png',
 	tags: ['drawing & design']
 },{
 	title: 'New Zealand Commercial Fish Species',
 	img: 'http://cdn2-www.dogtime.com/assets/uploads/gallery/german-shepherd-dog-breed-pictures/standing-7.jpg',
 	tags: ['drawing & design']
 },{
+	title: 'Cuba',
+	img: '../../assets/profile_drawing.png',
+	tags: ['videography']
+},{
 	title: 'BTS infographic & datavis',
 	img: null,
-	tags: ['data', 'drawing & design']
+	tags: ['data', 'dev']
 },{
 	title: 'Title of thing',
 	img: null,
