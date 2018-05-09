@@ -19,28 +19,11 @@ export default class App extends Component {
 		this.currentUrl = e.url;
 	};
 
-	handleNavigation = e => {
-		console.log('Clicked to navigate');
-		console.log(e);
-		// if (type === 'tag') {
-		// 	console.log(`Clicked tag ${action}.`);
-		// }
-		// else if (type === 'about') {
-		// 	route('/about');
-		// }
-		// else {
-		// 	console.log('Unknown pill type.');
-		// }
-	};
-
-	handleFilter = e => {
-		console.log('Clicked a tag to filter');
-		console.log(e);
-
-		const index = this.state.tags.indexOf(e.tag);
-		if (index > -1) {
+	handleFilter = (e) => {
+		const index = this.state.filters.indexOf(e);
+		if (index === -1) {
 			// If the tag was not already active, add to list of filters.
-			this.setState({ filters: this.state.filters.concat(e.tag) });
+			this.setState({ filters: this.state.filters.concat(e) });
 		}
 		else {
 			// If tag was already active, remove from list of filters.
@@ -58,7 +41,6 @@ export default class App extends Component {
 		this.state = {
 		  filters: []
 		};
-		this.handleNavigation = this.handleNavigation.bind(this);
 		this.handleFilter = this.handleFilter.bind(this);
 	  }
 
@@ -66,7 +48,6 @@ export default class App extends Component {
 		return (
 			<div id="app">
 				<Sidebar
-					onNavigation={this.handleNavigation}
 					onFilter={this.handleFilter}
 				/>
 				<div id="main">

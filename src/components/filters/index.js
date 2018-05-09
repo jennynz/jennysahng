@@ -1,4 +1,4 @@
-import { h, Component } from 'preact';
+import { h } from 'preact';
 import Pill from '../pill';
 import style from './style';
 
@@ -12,12 +12,10 @@ const tags = [
 	{ name: 'misc', color: 'grey' }
 ];
 
-export default class Filters extends Component {
-	render() {
-		return (
-			<div class={style.filters}>
-				{tags.map((tag, i) => <Pill text={tag.name} action={tag.name} key={i} color={tag.color} />)}
-			</div>
-		);
-	}
-}
+const Filters = props => (
+	<div class={style.filters}>
+		{tags.map((tag, i) => <Pill text={tag.name} action={tag.name} key={i} color={tag.color} onFilter={props.onFilter} />)}
+	</div>
+);
+
+export default Filters;
