@@ -30,6 +30,7 @@ export default class App extends Component {
 			const f = this.state.filters;
 			this.setState({ filters: f.slice(0,index).concat(f.slice(index+1)) });
 		}
+		console.log(this.state.filters);
 	}
 
 	// Some event cycle thing that renders the app again to show only filtered ones.
@@ -52,7 +53,7 @@ export default class App extends Component {
 				/>
 				<div id="main">
 					<Router onChange={this.handleRoute}>
-						<Home path="/" />
+						<Home path="/" filters={this.state.filters} />
 						<About path="/about/" user="me" />
 						<About path="/about/:user" />
 					</Router>

@@ -2,9 +2,9 @@ import { h } from 'preact';
 import Tiles from '../../components/tiles';
 import style from './style';
 
-const Home = () => (
+const Home = props => (
 	<div class={style.home}>
-		<Tiles />
+		<Tiles filters={props.filters} />
 	</div>
 );
 
