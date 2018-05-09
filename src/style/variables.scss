@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Gabriela');
-// @import url('https://fonts.googleapis.com/css?family=Quando');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 // Colors
 $text-color: #444;
 $bg-color: rgb(241, 241, 241);
+$highlight-color: #00bcd4;
 
 $pill-default: #e4e4e4;
 $pill-secondary: #a6a6a6;
@@ -25,8 +26,7 @@ $tile-gap: 40px;
 
 // Fonts
 $header-font: 'Gabriela', serif;
-// $header-font: 'Quando', serif;
 $monospace-font: "Andale Mono", AndaleMono, "Consolas", "Lucida Console",
 "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace;
-// $body-font: 'Helvetica Neue', arial, sans-serif;
-$body-font: $monospace-font;
+$san-serif-font: 'Raleway', 'Helvetica Neue', arial, sans-serif;
+$body-font: $san-serif-font;

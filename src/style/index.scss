@@ -23,6 +23,10 @@ html, body {
 	margin: 0 auto;
 }
 
+p {
+	line-height: 1.8;
+}
+
 @media (min-width: 768px) {
 	#main {
 		padding-left: $sidebar-width;
@@ -31,6 +35,14 @@ html, body {
 	}
 }
 
+.italic {
+	font-style: italic;
+}
+
 .no-wrap {
 	white-space: nowrap;
+}
+
+p a {
+	color: $highlight-color;
 }
