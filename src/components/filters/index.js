@@ -1,16 +1,7 @@
 import { h } from 'preact';
 import Pill from '../pill';
 import style from './style';
-
-const tags = [
-	{ name: 'data', color: 'purple' },
-	{ name: 'web dev', color: 'green' },
-	{ name: 'drawing & design', color: 'pink' },
-	{ name: 'writing', color: 'yellow' },
-	{ name: 'videography', color: 'light-blue' },
-	{ name: 'linguistics', color: 'orange' },
-	{ name: 'misc', color: 'grey' }
-];
+import tags from '../../constants/tags';
 
 const Filters = props => (
 	<div class={style.filters}>
