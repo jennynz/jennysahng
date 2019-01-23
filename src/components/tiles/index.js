@@ -16,7 +16,7 @@ const Tiles = props => (
 			if (displayProject) {
 				return (
 					<div class={style.tile} key={i} style={projectImg}>
-						<p>{project.title}</p>
+						<p class={project.isDark ? style['tile-dark'] : style['tile-light']}>{project.title}</p>
 						<div class={style['tag-dots']}>
 							{project.tags.map((tag, j) => (
 								<span
